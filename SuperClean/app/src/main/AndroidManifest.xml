@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.wzh.superclean" >
+
+    <!-- FORCE_STOP_PACKAGE权限需要在<manifest /> 上添加android:sharedUserId="android.uid.system" -->
+    <!-- <uses-permission android:name="android.permission.FORCE_STOP_PACKAGE" /> -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <!-- PackageManager 的 getPackageSizeInfo()方法所需要的权限 -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/BaseTheme" >
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="screenSize|keyboardHidden"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SplishActivity"
+            android:label="@string/title_activity_splish"
+            android:theme="@style/SplishTheme" >
+        </activity>
+        <activity
+            android:name=".activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".activity.MemoryCleanActivity"
+            android:label="@string/title_activity_memory_clean" >
+        </activity>
+
+        <service android:name=".service.TestService" >
+            <intent-filter>
+                <action android:name="action_text_service" />
+            </intent-filter>
+        </service>
+
+        <activity
+            android:name=".activity.TestServiceActivity"
+            android:label="@string/title_activity_test_service" >
+        </activity>
+
+        <service android:name=".service.TestBindService" >
+            <intent-filter>
+                <action android:name="action_text_bind_service" />
+            </intent-filter>
+        </service>
+        <service android:name=".service.CleanMemoryService" >
+        </service>
+
+        <activity
+            android:name=".activity.CleanRubbishActivity"
+            android:label="@string/title_activity_clean_rubbish" >
+        </activity>
+
+        <service android:name=".service.CleanRubbishService" >
+        </service>
+
+        <activity
+            android:name=".activity.AutoStartMgrActivity"
+            android:label="@string/title_activity_auto_start" >
+        </activity>
+        <activity
+            android:name=".activity.SoftwareMgrActivity"
+            android:label="@string/title_activity_software_mgr" >
+        </activity>
+        <activity
+            android:name=".activity.QuickClearActivity"
+            android:excludeFromRecents="true"
+            android:exported="true"
+            android:label="@string/title_activity_quick_clear"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.ggg.ddd"
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" >
+            <intent-filter>
+                <action android:name="com.wzh.quickclear" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".receive.TestReceiver">
+            <!-- android:priority="10" 设置优先级，值越大优先级越高，先响应广播 -->
+            <intent-filter android:priority="10" >
+                <action android:name="com.wzh.superclean.action.textbroad" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

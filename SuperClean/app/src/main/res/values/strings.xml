@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SuperClean</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_splish">SplishActivity</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_open">drawer open</string>
+    <string name="drawer_close">drawer close</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_memory_clean">MemoryCleanActivity</string>
+    <string name="title_activity_test_service">TestServiceActivity</string>
+    <string name="title_activity_clean_rubbish">CleanRubbishActivity</string>
+    <string name="title_activity_auto_start">AutoStartActivity</string>
+    <string name="title_activity_software_mgr">SoftwareMgrActivity</string>
+    <string name="title_activity_quick_clear">QuickClearActivity</string>
+
+</resources>

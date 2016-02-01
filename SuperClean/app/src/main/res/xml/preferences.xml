@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="常规设置" >
+        <Preference android:title="创建桌面快捷方式"
+            android:key="pCreateShortCut"
+            android:summary="摘要...."/>
+
+        <SwitchPreference android:title="强力清理"
+            android:summary="此功能需要root权限"
+            android:key="pPowerClear"
+            android:enabled="false" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="其它" >
+
+        <Preference android:title="分享"
+            android:key="pShare" />
+
+        <Preference android:title="给我好评"
+            android:key="pEvaluate" />
+
+        <Preference android:title="版本信息"
+            android:key="pVersionInfo" />
+
+        <Preference android:title="检查更新"
+            android:key="pUpdate" />
+
+        <Preference android:title="关于"
+            android:key="pAbout"/>
+    </PreferenceCategory>
+</PreferenceScreen>

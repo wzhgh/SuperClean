@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="BaseTheme" parent="android:Theme.Holo.Light">
+    </style>
+
+    <!-- 闪屏主题，没有ActionBar且全屏 -->
+    <style name="SplishTheme" parent="android:Theme.Holo.Light.NoActionBar.Fullscreen">
+    </style>
+
+</resources>

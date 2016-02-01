@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 抽屉导航选项 被按下时的背景颜色 -->
+    <color name="drawer_item_bg_press_color">#ffeeeeee</color>
+    <color name="drawer_item_bg_normal_color">#00ffffff</color>
+
+    <!-- 抽屉导航选项
+    被按下时的背景颜色 选中时字体的颜色-->
+    <color name="drawer_item_font_press_color">#ff666666</color>
+    <color name="drawer_item_font_normal_color">#ff666666</color>
+
+    <color name="main_color" >#FF2c5aa9</color>
+
+    <!-- 分隔线的颜色 -->
+    <color name="dividing_line_color" >#19000000</color>
+
+    <!-- card的布局的背景颜色 -->
+    <color name="card_bg_color" >#e6ffffff</color>
+
+</resources>

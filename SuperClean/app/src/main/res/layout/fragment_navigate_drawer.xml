@@ -1,0 +1,97 @@
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_gravity="top"
+        android:background="#f8ffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="100dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/imageView"
+                    android:src="@drawable/navigation_useinfo_bg_img"
+                    android:saveEnabled="false"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/drawer_rg_id">
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="首页"
+                        android:id="@+id/rb_main_id"
+                        android:background="@drawable/navigate_index_bg_selector"
+                        android:drawableLeft="@drawable/navigate_index_left_selector"
+                        android:textColor="@drawable/navigate_index_text_selector"
+                        android:textSize="17dp"
+                        android:drawablePadding="15dp"
+                        android:paddingLeft="20dp"
+                        android:button="@null" />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="图片浏览"
+                        android:id="@+id/rb_img_id"
+                        android:background="@drawable/navigate_index_bg_selector"
+                        android:drawableLeft="@drawable/navigate_index_left_selector"
+                        android:textColor="@drawable/navigate_index_text_selector"
+                        android:textSize="17sp"
+                        android:drawablePadding="15dp"
+                        android:button="@null"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="视频爽看"
+                        android:id="@+id/rb_video_id"
+                        android:checked="false"
+                        android:background="@drawable/navigate_index_bg_selector"
+                        android:drawableLeft="@drawable/navigate_index_left_selector"
+                        android:textColor="@drawable/navigate_index_text_selector"
+                        android:textSize="17sp"
+                        android:drawablePadding="15dp"
+                        android:button="@null"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <RadioButton
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:text="设置"
+                        android:id="@+id/rb_set_id"
+                        android:checked="false"
+                        android:background="@drawable/navigate_index_bg_selector"
+                        android:drawableLeft="@drawable/navigate_setting_left_selector"
+                        android:textColor="@drawable/navigate_index_text_selector"
+                        android:textSize="17sp"
+                        android:drawablePadding="15dp"
+                        android:button="@null"
+                        android:paddingLeft="20dp"
+                        />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+</ScrollView>

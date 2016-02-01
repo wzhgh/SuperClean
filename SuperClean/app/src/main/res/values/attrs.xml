@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 属性资源文件 -->
+
+<!-- 定义单个属性 -->
+<attr name="hhfff" format="string"  />
+
+<!-- 定义一个styleable对象来组合多个属性，ItemCardView是随便命名的，但是用类名命名比较清晰易懂 -->
+<declare-styleable name="ItemCardView">
+    <attr name="card_img" format="reference" />
+    <attr name="card_name" format="string" />
+</declare-styleable>
+</resources>
